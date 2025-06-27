@@ -15,7 +15,7 @@
 | **O(1)**       | Constant time – independent of input    | Accessing an array element  |
 | **O(log n)**   | Logarithmic – input is halved each step | Binary search               |
 | **O(n)**       | Linear – grows with input size          | Looping through an array    |
-| **O(n log n)** | Linear arithmic – common in sorting        | Merge Sort, Quick Sort      |
+| **O(n log n)** | Linear arithmetic – common in sorting        | Merge Sort, Quick Sort      |
 | **O(n²)**      | Quadratic – nested loops                | Bubble Sort, Selection Sort |
 | **O(2ⁿ)**      | Exponential – doubles every time        | Recursive Fibonacci         |
 | **O(n!)**      | Factorial – all permutations            | Solving traveling salesman  |
