@@ -1,35 +1,36 @@
 ## 🧪 Dry Run: Remove Element from Array (In-place)
 
-### ✅ Problem Statement:
-Given an integer array `nums` and a value `val`, remove all occurrences of `val` in-place and return the new length of the array. The relative order of elements may be changed.
+✅ Problem Statement
+Given an integer array nums and a value val, remove all occurrences of val from the array in-place and return the new length. The relative order of the remaining elements may be changed.
 
 ---
 
 ### 🧠 Approach (Code):
 
+
 ```js
 var RemoveElement = function (nums, val) {
     let x = 0;
     for (let i = 0; i < nums.length; i++) {
-        //Shift element s to left if not equal to val
+        // Shift elements to the left if not equal to val
         if (nums[i] !== val) {
             nums[x] = nums[i];
-            x = x + 1
+            x = x + 1;
         }
     }
     return x;
 }
 
 let result = [3, 2, 1, 5, 3, 4, 8, 3];
-let removeElement = RemoveElement(result, 3)
-console.log(`The number of removed elements is ${result.length - removeElement}`);
-console.log(`The new array is: ${result.slice(0, removeElement)}`);
+let newLength = RemoveElement(result, 3);
+console.log(`The number of removed elements is ${result.length - newLength}`);
+console.log(`The new array is: ${result.slice(0, newLength)}`);
 ```
 ### 🔍 Explanation:
 
 ## 📘 Explanation: Remove Element In-Place
 
-This JavaScript function removes all occurrences of a specified value from an array **in-place**, meaning it doesn't use any extra space for another array. Instead, it overwrites the original array to keep only the elements that should remain.
+This JavaScript function removes all occurrences of a specified value from an array in-place, meaning no extra space is used. Instead, it modifies the original array by overwriting the values to retain only the elements that are not equal to val.
 
 ---
 
@@ -55,12 +56,8 @@ This JavaScript function removes all occurrences of a specified value from an ar
 
 ### ✅ Example:
 
-Input:
-```js
-nums = [3, 2, 1, 5, 3, 4, 8, 3];
-val = 3;
-
 ### 🔧 Input:
+
 ```js
 nums = [3, 2, 1, 5, 3, 4, 8, 3]
 val = 3
@@ -70,7 +67,7 @@ val = 3
 
 🔁 Step-by-Step Iteration:
 
-let x = 0; // pointer to track new index for elements not equal to val
+
 
 | `i` (index) | `nums[i]` | `nums[i] !== val` | Action        | Updated Array             | `x` |
 | ----------- | --------- | ----------------- | ------------- | ------------------------- | --- |
@@ -92,3 +89,7 @@ let x = 0; // pointer to track new index for elements not equal to val
     - Only the first 5 elements are valid after removal.
     
 - Modified Array (first 5 elements): [2, 1, 5, 4, 8]
+
+## Visual Dry Run: Remove Element from Array (In-place)
+
+![img](./REMOVE-ELEMENT.png)
