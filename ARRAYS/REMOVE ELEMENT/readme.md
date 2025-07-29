@@ -90,6 +90,3 @@ val = 3
     
 - Modified Array (first 5 elements): [2, 1, 5, 4, 8]
 
-## Visual Dry Run: Remove Element from Array (In-place)
-
-![img](./REMOVE-ELEMENT.png)

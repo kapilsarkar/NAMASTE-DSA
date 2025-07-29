@@ -46,6 +46,27 @@ Copy nums[i] to nums[x].
 
 This process compacts all unique values into the first k = x + 1 elements.
 
+### 🧠 Why It’s Efficient:
+
+### ✅ **Time Complexity:** O(n) :
+
+ - The function uses a single loop to iterate over the array once.
+
+ - The loop runs n times where n is nums.length.
+
+- Each iteration does constant time work (comparison and assignment).
+
+ - ✅ So total time complexity is: O(n)
+
+
+ ### ✅ **Space Complexity:** O(1) :
+
+- No extra space is used that grows with the input size.
+
+- Only a few variables (x, i) are used.
+
+- ✅ So space complexity is: O(1) (constant space)
+
 ### 📊 Dry Run Table:
 
 ```js
@@ -74,7 +95,5 @@ uniqueCount = 5
 Modified result array (first 5 elements): [0, 1, 2, 3, 4]
 
 
-## Visual Dry Run: Remove Duplicates in-place
 
-![img](./REMOVE-DUPLICATES.png)
 
