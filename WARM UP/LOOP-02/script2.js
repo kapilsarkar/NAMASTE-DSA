@@ -19,16 +19,6 @@ console.log(searchElement(arr, 60))
 
 let arr2 = [10, 20, -2, -10, -6, 50]
 
-function countNegativeNumber(arr2) {
-    for (let i = 0; i < arr2.length; i++) {
-        if (arr2[i] < 0) {
-            return arr2.length
-        }
-    }
-}
-
-let result2 = countNegativeNumber(arr2)
-console.log(result2)
 
 function countNegativeNumber(arr2) {
     let count = 0;
@@ -41,3 +31,22 @@ function countNegativeNumber(arr2) {
 }
 
 console.log(countNegativeNumber(arr2))
+
+//Write a function that return the largest number in an array
+
+let largestArray = [5, 10, 200, 500, 20, 29, 50];
+
+function checkLargestNumberInArray(largestArray) {
+
+    
+    let largerNum = 0
+    
+    for (let i = 0; i < largestArray.length; i++) {
+        if (largestArray[i] > largerNum) {
+            largerNum = largestArray[i]
+        }
+    }
+    return largerNum
+}
+
+console.log(checkLargestNumberInArray(largestArray))
