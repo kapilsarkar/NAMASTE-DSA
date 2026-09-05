@@ -39,11 +39,11 @@ let largestArray = [5, 10, 200, 500, 20, 29, 50];
 function checkLargestNumberInArray(largestArray) {
 
     
-    let largerNum = 0
+    let largerNum = largestArray[0] //let us Assume first element in the array be largest
     
     for (let i = 0; i < largestArray.length; i++) {
         if (largestArray[i] > largerNum) {
-            largerNum = largestArray[i]
+            largerNum = largestArray[i] //update the max with the largest value in the array
         }
     }
     return largerNum
