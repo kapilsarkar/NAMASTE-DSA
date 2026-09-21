@@ -36,17 +36,33 @@ console.log(countNegativeNumber(arr2))
 
 let largestArray = [5, 10, 200, 500, 20, 29, 50];
 
-function checkLargestNumberInArray(largestArray) {
+function checkLargestNumInArray(arr) {
 
-    
-    let largerNum = largestArray[0] //let us Assume first element in the array be largest
-    
-    for (let i = 0; i < largestArray.length; i++) {
-        if (largestArray[i] > largerNum) {
-            largerNum = largestArray[i] //update the max with the largest value in the array
+    let max = arr[0]; //let us Assume first element in the array be largest
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]; //update the max with the largest value in the array
         }
     }
-    return largerNum
+    return max;
 }
 
-console.log(checkLargestNumberInArray(largestArray))
+let resultLargest = checkLargestNumInArray(largestArray);
+console.log(resultLargest);
+
+//Write a function that return the smallest number in an array.
+
+let smallestArray = [5, 10, 200, 500, 20, 29, 50];
+
+function checkSmallestNumberInArray(arr) {
+    let min = arr[0]; // Let the First Number be the Smallest
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i] // update the min with the smallest value in the array
+        }
+    }
+
+    return min
+}
+
+console.log(checkSmallestNumberInArray(smallestArray))
